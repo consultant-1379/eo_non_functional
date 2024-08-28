@@ -1,0 +1,4633 @@
+{
+    "deployments": {
+        "cm": {
+            "capa-controller-manager": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "2",
+                            "memory": "200Mi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "memory": "150Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "capi-controller-manager": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "1100m",
+                            "memory": "2500Mi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "memory": "2000Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "capi-kubeadm-bootstrap-controller-manager": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "10m",
+                            "memory": "120Mi"
+                        },
+                        "requests": {
+                            "cpu": "7m",
+                            "memory": "100Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "capi-kubeadm-control-plane-controller-manager": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "2900Mi"
+                        },
+                        "requests": {
+                            "cpu": "450m",
+                            "memory": "2600Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "capz-controller-manager": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "550m",
+                            "memory": "1550Mi"
+                        },
+                        "requests": {
+                            "cpu": "120m",
+                            "memory": "1500Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-act-aaa": {
+                "data": {
+                    "aaa": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "2362232012800m"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "2362232012800m"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-act-activation-engine": {
+                "data": {
+                    "eric-act-data-view-engine": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "memory": "4Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "memory": "4Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-act-activation-orchestrator": {
+                "data": {
+                    "orchestrator": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "memory": "2560Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-act-activation-orchestrator-deployer": {
+                "data": {
+                    "deployer": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "500M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-activation-replicator": {
+                "data": {
+                    "replicator": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "4Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "4Gi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-backup-restore-preparation-agent": {
+                "data": {
+                    "eric-act-backup-restore-preparation-agent": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "1G"
+                        }
+                    }
+                },
+                "replica_count": "0"
+            },
+            "eric-act-csr-data-collection": {
+                "data": {
+                    "csr-data-collection": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "500M"
+                        }
+                    }
+                },
+                "replica_count": "0"
+            },
+            "eric-act-cudb-activation-blocker": {
+                "data": {
+                    "eric-act-cudb-activation-blocker": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "400M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "400M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-functional-verifier": {
+                "data": {
+                    "verifier": {
+                        "limits": {
+                            "cpu": "300m",
+                            "memory": "600M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "300M"
+                        }
+                    }
+                },
+                "replica_count": "0"
+            },
+            "eric-act-inbound-async": {
+                "data": {
+                    "inbound-async": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "1500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "1500M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-inbound-batch-handler": {
+                "data": {
+                    "inbound-batch-handler": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "1G"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-inbound-interfaces": {
+                "data": {
+                    "inbound-interface": {
+                        "limits": {
+                            "cpu": "2100m",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "2Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-act-inbound-mml": {
+                "data": {
+                    "inbound-mml": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-mutex-handler": {
+                "data": {
+                    "eric-act-mutex-handler": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "800M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "800M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-proclog-cassandra-stasher": {
+                "data": {
+                    "stasher": {
+                        "limits": {
+                            "cpu": "2300m",
+                            "memory": "1500M"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "memory": "1500M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-proclog-manager": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "640M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "640M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-rest-provisioning": {
+                "data": {
+                    "rest-provisioning": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "1G"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-act-smtp-sender": {
+                "data": {
+                    "smtp-sender": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "500M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-subscription-data-viewer": {
+                "data": {
+                    "subscription-data-viewer": {
+                        "limits": {
+                            "cpu": "3",
+                            "memory": "2G"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "2G"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-tomcat": {
+                "data": {
+                    "webserver": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "4Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "4Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-adp-gui-aggregator-service": {
+                "data": {
+                    "main": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "300Mi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "300Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-am-onboarding-service": {
+                "data": {
+                    "eric-am-onboarding-service": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "120Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "ephemeral-storage": "25Gi",
+                            "memory": "1280Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-bss-esa": {
+                "data": {
+                    "eric-bss-esa": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-cnom-server": {
+                "data": {
+                    "server": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "750Mi",
+                            "memory": "400Mi"
+                        },
+                        "requests": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "400Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-coordinator-zk-agent": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "60m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "46m",
+                            "memory": "100M"
+                        }
+                    },
+                    "eric-data-coordinator-zk-agent": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "250M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-distributed-coordinator-ed-agent": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "100M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "100M"
+                        }
+                    },
+                    "eric-data-distributed-coordinator-ed-agent": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "400M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-object-storage-mn-mgt": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "8Gi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-data-object-storage-mn-bra": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "16Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-search-engine-ingest": {
+                "data": {
+                    "ingest": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    },
+                    "tlsproxy": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-data-search-engine-ingest-tls": {
+                "data": {
+                    "ingest": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    },
+                    "tlsproxy": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-act-cna-wide-column-database-cd-sitename1-bra": {
+                "data": {
+                    "bra": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "ephemeral-storage": "20Gi",
+                            "memory": "1536Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "512Mi",
+                            "memory": "512Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "512Mi",
+                            "memory": "100M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-act-cna-wide-column-database-cd-datacenter1-bra": {
+                "data": {
+                    "bra": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "512Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-gr": {
+                "data": {
+                    "eric-eo-cm-gr-app": {
+                        "limits": {
+                            "cpu": "720m",
+                            "memory": "250Mi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "memory": "150Mi"
+                        }
+                    },
+                    "eric-eo-cm-gr-rq-scheduler": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "75Mi"
+                        }
+                    },
+                    "eric-eo-cm-gr-rq-worker": {
+                        "limits": {
+                            "cpu": "2100m",
+                            "memory": "1600Mi"
+                        },
+                        "requests": {
+                            "cpu": "400m",
+                            "memory": "800Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "60m",
+                            "memory": "45Mi"
+                        },
+                        "requests": {
+                            "cpu": "46m",
+                            "memory": "35Mi"
+                        }
+                    },
+                    "eric-eo-cm-gr-wait-redis": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "memory": "75Mi"
+                        }
+                    }
+                },
+                "replica_count": 1
+            },
+            "eric-eo-act-cna-wide-column-database-cd-operator": {
+                "data": {
+                    "operator": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "512Mi",
+                            "memory": "100M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-api-gateway": {
+                "data": {
+                    "eric-eo-api-gateway": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "1512Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "1512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-act-prov-adapter": {
+                "data": {
+                    "eric-eo-cm-act-prov-adapter": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "640Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-core": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "500Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "128Mi"
+                        }
+                    },
+                    "eric-eo-cm-core": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "25Gi",
+                            "memory": "10Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "8448Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-cust-wf": {
+                "data": {
+                    "eric-eo-cm-cust-wf": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "2356Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "1152Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "100Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "eric-eo-cm-cust-wf-side": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "200Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "eric-eo-cm-cust-wf-camunda-monitor": {
+                        "limits": {
+                            "cpu": "350m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-cust-wf-db-bragent": {
+                "data": {
+                    "eric-eo-cm-cust-wf-db-bra": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-cust-wf-db-brm": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-db-bragent": {
+                "data": {
+                    "eric-eo-cm-db-bra": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "18Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "14745Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-db-brm": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-fm": {
+                "data": {
+                    "eric-eo-cm-fm": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "768Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-fm-simulator": {
+                "data": {
+                    "eric-eo-cm-fm-simulator": {
+                        "limits": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "0"
+            },
+            "eric-eo-cm-helm-repository": {
+                "data": {
+                    "registry": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "250Mi",
+                            "memory": "1280Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "128Mi"
+                        }
+                    },
+                    "sidecar": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "250Mi",
+                            "memory": "1280Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-idam-dsreplicationagent": {
+                "data": {
+                    "eric-eo-cm-idam-dsreplicationagent": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "memory": "75Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-license-consumer": {
+                "data": {
+                    "eric-eo-cm-license-consumer": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "800Mi"
+                        },
+                        "requests": {
+                            "cpu": "400m",
+                            "memory": "650Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-ns-lcm": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "camunda-monitor": {
+                        "limits": {
+                            "cpu": "350m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-ns-lcm": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "2Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-ns-lcm-db-bragent": {
+                "data": {
+                    "eric-eo-cm-ns-lcm-db-bra": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-ns-lcm-db-brm": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-onboarding": {
+                "data": {
+                    "eric-eo-cm-onboarding": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "120Gi",
+                            "memory": "4Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "25Gi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-onboarding-db-bragent": {
+                "data": {
+                    "eric-eo-cm-onboarding-db-bra": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-onboarding-db-brm": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-order-mgmt-ca": {
+                "data": {
+                    "eric-eo-cm-order-mgmt-ca": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "4Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "3200Mi"
+                        }
+                    },
+                    "eric-eo-cm-order-mgmt-ca-camunda-monitor": {
+                        "limits": {
+                            "cpu": "350m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-order-mgmt-ca-db-bragent": {
+                "data": {
+                    "eric-eo-cm-order-mgmt-ca-db-bra": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "6Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "4915Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-order-mgmt-ca-db-brm": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-toscao": {
+                "data": {
+                    "toscaocm": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "384Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-toscao-db-bragent": {
+                "data": {
+                    "eric-eo-cm-toscao-db-bra": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-toscao-db-brm": {
+                        "limits": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-ui": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "eric-eo-cm-ui": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "1124Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "150Mi",
+                            "memory": "896Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-vim-discovery": {
+                "data": {
+                    "eric-eo-cm-vim-discovery": {
+                        "limits": {
+                            "cpu": "800m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1152Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "1152Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-vim-dyn-capacity": {
+                "data": {
+                    "eric-eo-cm-vim-dyn-capacity": {
+                        "limits": {
+                            "cpu": "800m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-usermgmt": {
+                "data": {
+                    "eric-eo-usermgmt": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "600M"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "400M"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-usermgmt-ui": {
+                "data": {
+                    "eric-eo-usermgmt-ui": {
+                        "limits": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "200Mi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "100Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-fh-alarm-handler": {
+                "data": {
+                    "eric-fh-alarm-handler": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "600M"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "600M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-fh-snmp-alarm-provider": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "100M"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "100M"
+                        }
+                    },
+                    "eric-fh-snmp-alarm-provider": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "1G"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-lm-combined-server-license-consumer-handler": {
+                "data": {
+                    "eric-lm-license-consumer-handler": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "128Mi",
+                            "memory": "500M"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-lm-combined-server-license-server-client": {
+                "data": {
+                    "eric-lm-license-server-client": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "128Mi",
+                            "memory": "500M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-log-transformer": {
+                "data": {
+                    "logtransformer": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "6Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "memory": "6Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "memory": "500M"
+                        }
+                    },
+                    "tlsproxy": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-mesh-controller-a": {
+                "data": {
+                    "discovery": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-oss-clm-agent": {
+                "data": {
+                    "eric-oss-clm-agent": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-oss-common-postgres-bragent": {
+                "data": {
+                    "eric-oss-common-postgres-bra": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "eric-oss-common-postgres-brm": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-oss-ddc": {
+                "data": {
+                    "ddc": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "128Mi"
+                        }
+                    },
+                    "remotewriter": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-oss-eo-clm-eric-eo-cert-manager": {
+                "data": {
+                    "eric-eo-cert-manager-controller": {
+                        "limits": {
+                            "cpu": "60m",
+                            "memory": "460Mi"
+                        },
+                        "requests": {
+                            "cpu": "30m",
+                            "memory": "230Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-oss-eo-clm-eric-eo-cert-manager-cainjector": {
+                "data": {
+                    "eric-eo-cert-manager-cainjector": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "560Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "280Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-oss-eo-clm-eric-eo-cert-manager-webhook": {
+                "data": {
+                    "eric-eo-cert-manager-webhook": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "60Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "30Mi"
+                        }
+                    },
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "evnfm-toscao": {
+                "data": {
+                    "evnfm-toscao": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "384Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-pm-kube-state-metrics": {
+                "data": {
+                    "eric-pm-kube-state-metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-sec-access-mgmt-sip-oauth2": {
+                "data": {
+                    "iam-sip-oauth2": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "100Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "iamagent": {
+                        "limits": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "512Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-sec-sip-tls-main": {
+                "data": {
+                    "sip-tls": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "400M"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "400M"
+                        }
+                    },
+                    "sip-tls-supervisor": {
+                        "limits": {
+                            "cpu": "300m",
+                            "memory": "400Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "400Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-si-application-sys-info-handler": {
+                "data": {
+                    "eric-si-application-sys-info-handler": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "100Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "idam-database-pg-bragent": {
+                "data": {
+                    "idam-database-pg-bra": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "idam-database-pg-brm": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "service-mesh-ingress-gateway": {
+                "data": {
+                    "istio-proxy": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "300Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            }
+        },
+        "evnfm": {
+            "application-manager-postgres-bragent": {
+                "data": {
+                    "application-manager-postgres-bra": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "application-manager-postgres-brm": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-adp-gui-aggregator-service": {
+                "data": {
+                    "main": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "300Mi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "300Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-am-common-wfs": {
+                "data": {
+                    "eric-am-common-wfs": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "1536Mi",
+                            "memory": "3Gi"
+                        },
+                        "requests": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "2Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-am-common-wfs-ui": {
+                "data": {
+                    "eric-am-common-wfs-ui": {
+                        "limits": {
+                            "cpu": "700m",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "200Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-am-onboarding-service": {
+                "data": {
+                    "eric-am-onboarding-service": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "350Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "ephemeral-storage": "260Mi",
+                            "memory": "1280Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-cm-mediator": {
+                "data": {
+                    "eric-cm-mediator": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "350Mi",
+                            "memory": "275Mi"
+                        },
+                        "requests": {
+                            "cpu": "600m",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "275Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-cm-mediator-notifier": {
+                "data": {
+                    "eric-cm-mediator": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "350Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "200Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-cnom-server": {
+                "data": {
+                    "server": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "750Mi",
+                            "memory": "400Mi"
+                        },
+                        "requests": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "400Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-distributed-coordinator-ed-agent": {
+                "data": {
+                    "eric-data-distributed-coordinator-ed-agent": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "400Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-key-value-database-rd": {
+                "data": {
+                    "kvdb-operator": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "200Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "30Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-object-storage-mn-mgt": {
+                "data": {
+                    "manager": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "8Gi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-search-engine-ingest": {
+                "data": {
+                    "ingest": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-api-gateway": {
+                "data": {
+                    "eric-eo-api-gateway": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "1512Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "1512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-common-br-agent": {
+                "data": {
+                    "common-br-agent": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "400Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "350Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-evnfm-crypto": {
+                "data": {
+                    "eric-eo-evnfm-crypto": {
+                        "limits": {
+                            "cpu": "800m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "250Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-evnfm-nbi": {
+                "data": {
+                    "eric-eo-evnfm-nbi": {
+                        "limits": {
+                            "cpu": "800m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "260Mi",
+                            "memory": "250Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-fh-event-to-alarm-adapter": {
+                "data": {
+                    "eric-eo-fh-event-to-alarm-adapter": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "250Mi",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-lm-consumer": {
+                "data": {
+                    "eric-eo-lm-consumer": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "260Mi",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-usermgmt": {
+                "data": {
+                    "eric-eo-usermgmt": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "600M"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "400M"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-usermgmt-ui": {
+                "data": {
+                    "eric-eo-usermgmt-ui": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "600M"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "300M"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-fh-alarm-handler": {
+                "data": {
+                    "eric-fh-alarm-handler": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "384Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-fh-snmp-alarm-provider": {
+                "data": {
+                    "eric-fh-snmp-alarm-provider": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "1536Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "384Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-lcm-container-registry-registry": {
+                "data": {
+                    "registry": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "sidecar": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1280Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "128Mi"
+                        }
+                    },
+                    "bragent": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "20Gi",
+                            "memory": "1500Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-lcm-helm-chart-registry": {
+                "data": {
+                    "registry": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1280Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "sidecar": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1280Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "128Mi"
+                        }
+                    },
+                    "bragent": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "16Gi",
+                            "memory": "1280Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-lm-combined-server-license-consumer-handler": {
+                "data": {
+                    "eric-lm-license-consumer-handler": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "128Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-lm-combined-server-license-server-client": {
+                "data": {
+                    "eric-lm-license-server-client": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "128Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-log-transformer": {
+                "data": {
+                    "logtransformer": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "6Gi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "memory": "6Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-mesh-controller-a": {
+                "data": {
+                    "discovery": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-oss-common-postgres-bragent": {
+                "data": {
+                    "eric-oss-common-postgres-bra": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "eric-oss-common-postgres-brm": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-pm-kube-state-metrics": {
+                "data": {
+                    "eric-pm-kube-state-metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-sec-access-mgmt-sip-oauth2": {
+                "data": {
+                    "iam-sip-oauth2": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "100Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "iamagent": {
+                        "limits": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "512Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-sec-certm": {
+                "data": {
+                    "certm": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "450Mi",
+                            "memory": "850Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "850Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-sec-sip-tls-main": {
+                "data": {
+                    "sip-tls": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "400Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "200Mi"
+                        }
+                    },
+                    "sip-tls-supervisor": {
+                        "limits": {
+                            "cpu": "300m",
+                            "memory": "400Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "200Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-si-application-sys-info-handler": {
+                "data": {
+                    "eric-si-application-sys-info-handler": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-vnflcm-db-bragent": {
+                "data": {
+                    "eric-vnflcm-db-bra": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "eric-vnflcm-db-brm": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-vnflcm-ui": {
+                "data": {
+                    "eric-vnflcm-ui": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "15Gi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-vnfm-orchestrator-service": {
+                "data": {
+                    "eric-vnfm-orchestrator-service": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "evnfm-toscao": {
+                "data": {
+                    "evnfm-toscao": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "idam-database-pg-bragent": {
+                "data": {
+                    "idam-database-pg-bra": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "idam-database-pg-brm": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "service-mesh-ingress-gateway": {
+                "data": {
+                    "istio-proxy": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "300Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-batch-manager": {
+                "data": {
+                    "eric-eo-batch-manager": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            }
+        }
+    },
+    "statefulsets": {
+        "cm": {
+            "eric-act-activation-cli": {
+                "data": {
+                    "eric-act-data-view-engine": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "3Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "3Gi"
+                        }
+                    },
+                    "eric-act-massive-cli-api": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "500M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-act-service-locator-registry": {
+                "data": {
+                    "slr": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "1256M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "1256M"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-bss-esa": {
+                "data": {
+                    "eric-bss-esa": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-ctrl-bro": {
+                "data": {
+                    "eric-ctrl-bro": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "4G"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "2G"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-coordinator-zk": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "60m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "46m",
+                            "memory": "100M"
+                        }
+                    },
+                    "datacoordinatorzk": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "2400M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "2400M"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-data-distributed-coordinator-ed": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "100M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "100M"
+                        }
+                    },
+                    "dced": {
+                        "limits": {
+                            "cpu": "650m",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "400M"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-data-document-database-pg": {
+                "data": {
+                    "eric-data-document-database-pg": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1G"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "1G"
+                        }
+                    },
+                    "eric-data-document-database-pg-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-data-message-bus-kf": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "100M"
+                        }
+                    },
+                    "messagebuskf": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "2G"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "memory": "1G"
+                        }
+                    },
+                    "metricsexporter": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "64Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "24Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-data-object-storage-mn": {
+                "data": {
+                    "eric-data-object-storage-mn": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "7900Mi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "2Gi"
+                        }
+                    },
+                    "eric-data-object-storage-mn-kes": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "4"
+            },
+            "eric-data-search-engine-data": {
+                "data": {
+                    "data": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    },
+                    "tlsproxy": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-data-search-engine-master": {
+                "data": {
+                    "master": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    },
+                    "tlsproxy": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-eo-act-cna-wcdb-cd": {
+                "data": {
+                    "cassandra": {
+                        "limits": {
+                            "cpu": "4",
+                            "memory": "8Gi"
+                        },
+                        "requests": {
+                            "cpu": "700m",
+                            "memory": "8Gi"
+                        }
+                    },
+                    "brsc": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "512Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "512Mi",
+                            "memory": "100M"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-eo-cm-cust-wf-db-sitename1": {
+                "data": {
+                    "eric-eo-cm-cust-wf-db": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "768Mi"
+                        }
+                    },
+                    "eric-eo-cm-cust-wf-db-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-data-message-bus-art-master": {
+                "data": {
+                    "eric-eo-cm-data-message-bus-art": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "640Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-data-message-bus-art-slave": {
+                "data": {
+                    "eric-eo-cm-data-message-bus-art": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-db-sitename1": {
+                "data": {
+                    "eric-eo-cm-db": {
+                        "limits": {
+                            "cpu": "1200m",
+                            "ephemeral-storage": "14745Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "550m",
+                            "ephemeral-storage": "12000Mi",
+                            "memory": "1280Mi"
+                        }
+                    },
+                    "eric-eo-cm-db-metrics": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "192Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-helm-repository-bragent": {
+                "data": {
+                    "bragent": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "16Gi",
+                            "memory": "1280Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-eo-cm-idam-configstore": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "250Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "configstore-api": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "eric-eo-cm-idam-configstore-bragent": {
+                        "limits": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "64Mi"
+                        }
+                    },
+                    "eric-eo-cm-idam-configstore-brmgmt": {
+                        "limits": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "200Mi"
+                        },
+                        "requests": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "100Mi"
+                        }
+                    },
+                    "ds": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "2688Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "2688Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-idam-ctsstore": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "250Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "ds": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "2688Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "2688Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-idam-openam": {
+                "data": {
+                    "am-configuration-agent": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "250Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "openam": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "5Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "5Gi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-idam-userstore": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "250Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "1Gi",
+                            "memory": "50Mi"
+                        }
+                    },
+                    "eric-eo-cm-idam-userstore-bragent": {
+                        "limits": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "64Mi"
+                        }
+                    },
+                    "eric-eo-cm-idam-userstore-brmgmt": {
+                        "limits": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "200Mi"
+                        },
+                        "requests": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "100Mi"
+                        }
+                    },
+                    "ds": {
+                        "limits": {
+                            "cpu": "2500m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "2688Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "500Mi",
+                            "memory": "2688Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-license-consumer-db-sitename1": {
+                "data": {
+                    "eric-eo-cm-license-consumer-db": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-eo-cm-license-consumer-db-metrics": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "192Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-ns-lcm-db-sitename1": {
+                "data": {
+                    "eric-eo-cm-ns-lcm-db": {
+                        "limits": {
+                            "cpu": "1100m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "768Mi"
+                        }
+                    },
+                    "eric-eo-cm-ns-lcm-db-metrics": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-onboarding-db-sitename1": {
+                "data": {
+                    "eric-eo-cm-onboarding-db": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "768Mi"
+                        }
+                    },
+                    "eric-eo-cm-onboarding-db-metrics": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "192Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-order-mgmt-ca-db-sitename1": {
+                "data": {
+                    "eric-eo-cm-order-mgmt-ca-db": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "6Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "4915Mi",
+                            "memory": "640Mi"
+                        }
+                    },
+                    "eric-eo-cm-order-mgmt-ca-db-metrics": {
+                        "limits": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "192Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-eo-cm-toscao-db-sitename1": {
+                "data": {
+                    "eric-eo-cm-toscao-db": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "9830Mi",
+                            "memory": "640Mi"
+                        }
+                    },
+                    "eric-eo-cm-toscao-db-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "50Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-oss-common-postgres": {
+                "data": {
+                    "eric-oss-common-postgres": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-oss-common-postgres-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-pm-alert-manager": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "160Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "memory": "110Mi"
+                        }
+                    },
+                    "eric-pm-alert-manager-alarm-handler-webhook": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "64Mi"
+                        }
+                    },
+                    "eric-pm-alert-manager": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-pm-server": {
+                "data": {
+                    "eric-pm-server": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "450Mi",
+                            "memory": "6Gi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "6Gi"
+                        }
+                    },
+                    "eric-pm-reverseproxy": {
+                        "limits": {
+                            "cpu": "2",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "128Mi"
+                        }
+                    },
+                    "eric-pm-configmap-reload": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "48Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "48Mi"
+                        }
+                    },
+                    "eric-pm-exporter": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "40Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "40Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-sec-access-mgmt": {
+                "data": {
+                    "iam": {
+                        "limits": {
+                            "cpu": "3",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "1500Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-sec-key-management-main": {
+                "data": {
+                    "kms": {
+                        "limits": {
+                            "cpu": "300m",
+                            "memory": "1200M"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "400M"
+                        }
+                    },
+                    "shelter": {
+                        "limits": {
+                            "cpu": "300m",
+                            "memory": "1200Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "400Mi"
+                        }
+                    },
+                    "eric-sec-key-management-metrics": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "50Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "memory": "10Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "60m",
+                            "memory": "100M"
+                        },
+                        "requests": {
+                            "cpu": "46m",
+                            "memory": "100M"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "idam-database-pg": {
+                "data": {
+                    "idam-database-pg": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "idam-database-pg-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            }
+        },
+        "evnfm": {
+            "application-manager-postgres": {
+                "data": {
+                    "application-manager-postgres": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "application-manager-postgres-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-cm-mediator-db-pg": {
+                "data": {
+                    "eric-cm-mediator-db-pg": {
+                        "limits": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "6Gi",
+                            "memory": "350Mi"
+                        },
+                        "requests": {
+                            "cpu": "150m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "350Mi"
+                        }
+                    },
+                    "eric-cm-mediator-db-pg-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-ctrl-bro": {
+                "data": {
+                    "eric-ctrl-bro": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "250Mi",
+                            "memory": "4Gi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "2Gi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-data-distributed-coordinator-ed": {
+                "data": {
+                    "dced": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "3Gi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "400m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "400Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-data-object-storage-mn": {
+                "data": {
+                    "eric-data-object-storage-mn": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "7900Mi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "ephemeral-storage": "256Mi",
+                            "memory": "2Gi"
+                        }
+                    }
+                },
+                "replica_count": "4"
+            },
+            "eric-data-search-engine-data": {
+                "data": {
+                    "data": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "2Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-data-search-engine-master": {
+                "data": {
+                    "master": {
+                        "limits": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "500m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "1Gi"
+                        }
+                    },
+                    "metrics": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "128Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "64Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-fh-alarm-handler-db-pg": {
+                "data": {
+                    "eric-fh-alarm-handler-db-pg": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "6Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-fh-alarm-handler-db-pg-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-lm-combined-server-db-pg": {
+                "data": {
+                    "eric-lm-combined-server-db-pg": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "6Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-lm-combined-server-db-pg-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-oss-common-postgres": {
+                "data": {
+                    "eric-oss-common-postgres": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-oss-common-postgres-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-pm-alert-manager": {
+                "data": {
+                    "eric-pm-alert-manager": {
+                        "limits": {
+                            "cpu": "1",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "memory": "512Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-pm-server": {
+                "data": {
+                    "eric-pm-server": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "450Mi",
+                            "memory": "8Gi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "ephemeral-storage": "400Mi",
+                            "memory": "512Mi"
+                        }
+                    },
+                    "eric-pm-configmap-reload": {
+                        "limits": {
+                            "cpu": "250m",
+                            "memory": "64Mi"
+                        },
+                        "requests": {
+                            "cpu": "140m",
+                            "memory": "23Mi"
+                        }
+                    },
+                    "eric-pm-exporter": {
+                        "limits": {
+                            "cpu": "250m",
+                            "memory": "64Mi"
+                        },
+                        "requests": {
+                            "cpu": "140m",
+                            "memory": "23Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-sec-access-mgmt": {
+                "data": {
+                    "iam": {
+                        "limits": {
+                            "cpu": "3",
+                            "ephemeral-storage": "4Gi",
+                            "memory": "2Gi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "1500Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-sec-key-management-main": {
+                "data": {
+                    "kms": {
+                        "limits": {
+                            "cpu": "300m",
+                            "memory": "1200Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "400Mi"
+                        }
+                    },
+                    "shelter": {
+                        "limits": {
+                            "cpu": "300m",
+                            "memory": "1200Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "400Mi"
+                        }
+                    },
+                    "eric-sec-key-management-metrics": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "50Mi"
+                        },
+                        "requests": {
+                            "cpu": "10m",
+                            "memory": "10Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-vnflcm-db": {
+                "data": {
+                    "eric-vnflcm-db": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "4Gi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "eric-vnflcm-db-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "320Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "eric-vnflcm-service": {
+                "data": {
+                    "eric-vnflcm-service": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "15Gi",
+                            "memory": "5632Mi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "4Gi"
+                        }
+                    },
+                    "eric-vnflcm-service-broagent": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "250M"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            },
+            "eric-vnflcm-service-ha": {
+                "data": {
+                    "eric-vnflcm-service": {
+                        "limits": {
+                            "cpu": "2",
+                            "ephemeral-storage": "15Gi",
+                            "memory": "6656Mi"
+                        },
+                        "requests": {
+                            "cpu": "1",
+                            "ephemeral-storage": "5Gi",
+                            "memory": "5Gi"
+                        }
+                    },
+                    "eric-vnflcm-service-broagent": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "250M"
+                        }
+                    }
+                },
+                "replica_count": "2"
+            },
+            "idam-database-pg": {
+                "data": {
+                    "idam-database-pg": {
+                        "limits": {
+                            "cpu": "1",
+                            "ephemeral-storage": "12Gi",
+                            "memory": "2560Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "256Mi"
+                        }
+                    },
+                    "idam-database-pg-metrics": {
+                        "limits": {
+                            "cpu": "200m",
+                            "ephemeral-storage": "300Mi",
+                            "memory": "256Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "230Mi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "3"
+            },
+            "eric-lcm-container-registry-bragent": {
+                "data": {
+                    "bragent": {
+                        "limits": {
+                            "cpu": "1500m",
+                            "ephemeral-storage": "20Gi",
+                            "memory": "1500Mi"
+                        },
+                        "requests": {
+                            "cpu": "300m",
+                            "ephemeral-storage": "10Gi",
+                            "memory": "128Mi"
+                        }
+                    }
+                },
+                "replica_count": "1"
+            }
+        }
+    },
+    "cronjobs": {
+        "cm": {
+            "eric-data-search-engine-curator": {
+                "data": {
+                    "curator": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            },
+            "eric-eo-act-cna-wide-column-database-cd-tls-restarte": {
+                "data": {
+                    "cassandra-tls-restarter": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "30Mi"
+                        },
+                        "requests": {
+                            "cpu": "0",
+                            "memory": "20Mi"
+                        }
+                    },
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "2050m",
+                            "ephemeral-storage": "2Gi",
+                            "memory": "500M"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "512Mi",
+                            "memory": "100M"
+                        }
+                    }
+                },
+                "replica_count": ""
+            },
+            "eric-eo-cm-core-cron-clean-awaiting-delete": {
+                "data": {
+                    "eric-eo-cm-core-clean-awaiting-delete": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "75Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            },
+            "eric-eo-cm-core-cron-clean-orphans": {
+                "data": {
+                    "eric-eo-cm-core-clean-orphans": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "75Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            },
+            "eric-eo-cm-core-cron-nsdelete": {
+                "data": {
+                    "eric-eo-cm-core-nsdelete": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "25m",
+                            "ephemeral-storage": "10Mi",
+                            "memory": "75Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            },
+            "eric-eo-cm-ns-lcm-cron-cleanup-db": {
+                "data": {
+                    "eric-eo-cm-ns-lcm-cron": {
+                        "limits": {
+                            "cpu": "100m",
+                            "ephemeral-storage": "100Mi",
+                            "memory": "150Mi"
+                        },
+                        "requests": {
+                            "cpu": "50m",
+                            "ephemeral-storage": "50Mi",
+                            "memory": "75Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            }
+        },
+        "evnfm": {
+            "eric-data-search-engine-curator": {
+                "data": {
+                    "curator": {
+                        "limits": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            },
+            "eric-eo-evnfm-vm-wfscleanup": {
+                "data": {
+                    "wfscleanup": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "200Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            }
+        }
+    },
+    "daemonsets": {
+        "cm": {
+            "capz-nmi": {
+                "data": {
+                    "timestamp-transformer": {
+                        "limits": {
+                            "cpu": "50m",
+                            "memory": "18Mi"
+                        },
+                        "requests": {
+                            "cpu": "20m",
+                            "memory": "9Mi"
+                        }
+                    },
+                    "nmi": {
+                        "limits": {
+                            "cpu": "200m",
+                            "memory": "512Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "256Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            },
+            "eric-log-shipper": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "500m",
+                            "memory": "750Mi"
+                        },
+                        "requests": {
+                            "cpu": "200m",
+                            "memory": "200Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            }
+        },
+        "evnfm": {
+            "eric-log-shipper": {
+                "data": {
+                    "logshipper": {
+                        "limits": {
+                            "cpu": "250m",
+                            "memory": "500Mi"
+                        },
+                        "requests": {
+                            "cpu": "100m",
+                            "memory": "100Mi"
+                        }
+                    }
+                },
+                "replica_count": ""
+            }
+        }
+    },
+    "rediscluster": {
+        "cm": {},
+        "evnfm": {
+            "eric-cloud-native-kvdb-rd-operand": {
+                "data": ["eric-cloud-native-kvdb-rd-operand-tfhr6", "eric-cloud-native-kvdb-rd-operand-z7fzb"]
+            }
+        }
+    },
+    "pvc": {
+        "cm": {
+            "backup-data-eric-ctrl-bro-0": {
+                "capacity": "20Gi"
+            },
+            "capi-deploy-post-install-job-kpm7n-cluster-api-target-volume": {
+                "capacity": {}
+            },
+            "data-eric-data-distributed-coordinator-ed-0": {
+                "capacity": "1Gi"
+            },
+            "data-eric-data-distributed-coordinator-ed-1": {
+                "capacity": "1Gi"
+            },
+            "data-eric-data-distributed-coordinator-ed-2": {
+                "capacity": "1Gi"
+            },
+            "data-eric-eo-cm-data-message-bus-art-master-0": {
+                "capacity": "2Gi"
+            },
+            "data-eric-eo-cm-data-message-bus-art-slave-0": {
+                "capacity": "2Gi"
+            },
+            "datadir-eric-data-coordinator-zk-0": {
+                "capacity": "2Gi"
+            },
+            "datadir-eric-data-coordinator-zk-1": {
+                "capacity": "2Gi"
+            },
+            "datadir-eric-data-coordinator-zk-2": {
+                "capacity": "2Gi"
+            },
+            "datadir-eric-data-message-bus-kf-0": {
+                "capacity": "20Gi"
+            },
+            "datadir-eric-data-message-bus-kf-1": {
+                "capacity": "20Gi"
+            },
+            "datadir-eric-data-message-bus-kf-2": {
+                "capacity": "20Gi"
+            },
+            "datadir-eric-eo-act-cna-wcdb-cd-0": {
+                "capacity": "20Gi"
+            },
+            "datadir-eric-eo-act-cna-wcdb-cd-1": {
+                "capacity": "20Gi"
+            },
+            "datadir-eric-eo-act-cna-wcdb-cd-2": {
+                "capacity": "20Gi"
+            },
+            "db-eric-eo-cm-idam-configstore-0": {
+                "capacity": "10Gi"
+            },
+            "db-eric-eo-cm-idam-configstore-1": {
+                "capacity": "10Gi"
+            },
+            "db-eric-eo-cm-idam-ctsstore-0": {
+                "capacity": "10Gi"
+            },
+            "db-eric-eo-cm-idam-ctsstore-1": {
+                "capacity": "10Gi"
+            },
+            "db-eric-eo-cm-idam-userstore-0": {
+                "capacity": "10Gi"
+            },
+            "db-eric-eo-cm-idam-userstore-1": {
+                "capacity": "10Gi"
+            },
+            "eric-eo-act-cna-wide-column-database-cd-datacenter1-bra-pvc": {
+                "capacity": {}
+            },
+            "eric-oss-ddc": {
+                "capacity": "50Gi"
+            },
+            "eric-pm-alert-manager-storage-eric-pm-alert-manager-0": {
+                "capacity": "1Gi"
+            },
+            "eric-pm-alert-manager-storage-eric-pm-alert-manager-1": {
+                "capacity": "1Gi"
+            },
+            "export-eric-data-object-storage-mn-0": {
+                "capacity": "10Gi"
+            },
+            "export-eric-data-object-storage-mn-1": {
+                "capacity": "10Gi"
+            },
+            "export-eric-data-object-storage-mn-2": {
+                "capacity": "10Gi"
+            },
+            "export-eric-data-object-storage-mn-3": {
+                "capacity": "10Gi"
+            },
+            "logs-eric-eo-cm-idam-configstore-0": {
+                "capacity": "1Gi"
+            },
+            "logs-eric-eo-cm-idam-configstore-1": {
+                "capacity": "1Gi"
+            },
+            "logs-eric-eo-cm-idam-ctsstore-0": {
+                "capacity": "1Gi"
+            },
+            "logs-eric-eo-cm-idam-ctsstore-1": {
+                "capacity": "1Gi"
+            },
+            "logs-eric-eo-cm-idam-userstore-0": {
+                "capacity": "1Gi"
+            },
+            "logs-eric-eo-cm-idam-userstore-1": {
+                "capacity": "1Gi"
+            },
+            "massive-commands-persistent-eric-act-activation-cli-0": {
+                "capacity": "5Gi"
+            },
+            "openam-root-eric-eo-cm-idam-openam-0": {
+                "capacity": "5Gi"
+            },
+            "openam-root-eric-eo-cm-idam-openam-1": {
+                "capacity": "5Gi"
+            },
+            "pg-data-eric-data-document-database-pg-0": {
+                "capacity": "2Gi"
+            },
+            "pg-data-eric-data-document-database-pg-1": {
+                "capacity": "2Gi"
+            },
+            "pg-data-eric-eo-cm-cust-wf-db-sitename1-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-eo-cm-cust-wf-db-sitename1-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-eo-cm-db-sitename1-0": {
+                "capacity": "12Gi"
+            },
+            "pg-data-eric-eo-cm-db-sitename1-1": {
+                "capacity": "12Gi"
+            },
+            "pg-data-eric-eo-cm-license-consumer-db-sitename1-0": {
+                "capacity": "1Gi"
+            },
+            "pg-data-eric-eo-cm-license-consumer-db-sitename1-1": {
+                "capacity": "1Gi"
+            },
+            "pg-data-eric-eo-cm-ns-lcm-db-sitename1-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-eo-cm-ns-lcm-db-sitename1-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-eo-cm-onboarding-db-sitename1-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-eo-cm-onboarding-db-sitename1-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-eo-cm-order-mgmt-ca-db-sitename1-0": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-eo-cm-order-mgmt-ca-db-sitename1-1": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-eo-cm-toscao-db-sitename1-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-eo-cm-toscao-db-sitename1-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-oss-common-postgres-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-oss-common-postgres-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-idam-database-pg-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-idam-database-pg-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-idam-database-pg-2": {
+                "capacity": "8Gi"
+            },
+            "storage-eric-data-search-engine-data-0": {
+                "capacity": "30Gi"
+            },
+            "storage-eric-data-search-engine-data-1": {
+                "capacity": "30Gi"
+            },
+            "storage-eric-data-search-engine-master-0": {
+                "capacity": "1Gi"
+            },
+            "storage-eric-data-search-engine-master-1": {
+                "capacity": "1Gi"
+            },
+            "storage-eric-data-search-engine-master-2": {
+                "capacity": "1Gi"
+            },
+            "storage-volume-eric-pm-server-0": {
+                "capacity": "40Gi"
+            }
+        },
+        "evnfm": {
+            "backup-data-eric-ctrl-bro-0": {
+                "capacity": "20Gi"
+            },
+            "data-eric-data-distributed-coordinator-ed-0": {
+                "capacity": "1Gi"
+            },
+            "data-eric-data-distributed-coordinator-ed-1": {
+                "capacity": "1Gi"
+            },
+            "data-eric-data-distributed-coordinator-ed-2": {
+                "capacity": "1Gi"
+            },
+            "eric-lcm-container-registry": {
+                "capacity": "40Gi"
+            },
+            "eric-lcm-helm-chart-registry": {
+                "capacity": "8Gi"
+            },
+            "eric-pm-alert-manager-storage-eric-pm-alert-manager-0": {
+                "capacity": "1Gi"
+            },
+            "eric-vnflcm-service-pvc": {
+                "capacity": "20Gi"
+            },
+            "export-eric-data-object-storage-mn-0": {
+                "capacity": "20Gi"
+            },
+            "export-eric-data-object-storage-mn-1": {
+                "capacity": "20Gi"
+            },
+            "export-eric-data-object-storage-mn-2": {
+                "capacity": "20Gi"
+            },
+            "export-eric-data-object-storage-mn-3": {
+                "capacity": "20Gi"
+            },
+            "pg-data-application-manager-postgres-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-application-manager-postgres-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-cm-mediator-db-pg-0": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-cm-mediator-db-pg-1": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-cm-mediator-db-pg-2": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-fh-alarm-handler-db-pg-0": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-fh-alarm-handler-db-pg-1": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-fh-alarm-handler-db-pg-2": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-lm-combined-server-db-pg-0": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-lm-combined-server-db-pg-1": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-lm-combined-server-db-pg-2": {
+                "capacity": "4Gi"
+            },
+            "pg-data-eric-oss-common-postgres-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-oss-common-postgres-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-eric-vnflcm-db-0": {
+                "capacity": "50Gi"
+            },
+            "pg-data-eric-vnflcm-db-1": {
+                "capacity": "50Gi"
+            },
+            "pg-data-idam-database-pg-0": {
+                "capacity": "8Gi"
+            },
+            "pg-data-idam-database-pg-1": {
+                "capacity": "8Gi"
+            },
+            "pg-data-idam-database-pg-2": {
+                "capacity": "8Gi"
+            },
+            "service-data-eric-vnflcm-service-0": {
+                "capacity": {}
+            },
+            "storage-eric-data-search-engine-data-0": {
+                "capacity": "30Gi"
+            },
+            "storage-eric-data-search-engine-data-1": {
+                "capacity": "30Gi"
+            },
+            "storage-eric-data-search-engine-master-0": {
+                "capacity": "1Gi"
+            },
+            "storage-eric-data-search-engine-master-1": {
+                "capacity": "1Gi"
+            },
+            "storage-eric-data-search-engine-master-2": {
+                "capacity": "1Gi"
+            },
+            "storage-volume-eric-pm-server-0": {
+                "capacity": "8Gi"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Get the list of all Python files that are staged for commit
+FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.py$')
+
+# Initialize the pass flag
+PASS=true
+
+# Run pylint on each Python file
+for FILE in $FILES; do
+  pylint "$FILE"
+  if [ $? -ne 0 ]; then
+    PASS=false
+  fi
+done
+
+# If pylint failed for any file, do not allow the commit
+if ! $PASS; then
+  echo "pylint failed on some files. Please fix the issues before committing."
+  exit 1
+fi
+
+exit 0
+

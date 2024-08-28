@@ -1,0 +1,60 @@
+pipeline {
+    agent { label params.TARGET_SLAVE }
+    stages {
+        stage ('checkout'){
+            steps {
+            git branch: '${GIT_BRANCH}', credentialsId: 'DOADM100', url: '$EO_STAGING_NON_FUNCTIONAL_REPO'
+            }
+        }
+
+        stage ('automation script'){
+            steps {
+                withCredentials([file(credentialsId: params.CREDENTIALS_ID, variable: 'KUBECONFIG')]) {
+                    withCredentials([usernamePassword(credentialsId: 'DOADM100', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+
+                        sh label: 'Running automation script', script:'''
+                        source /home/doadm100/localPython/eo-pe/eo_non_functional/bin/activate
+                        python main.py ${JOB_NAME}
+                        '''
+
+                    }
+                }
+            }
+        }
+
+        stage ('archive') {
+            when {
+                expression {
+                    def jobArchive = [
+                        'ro_non_funct_resources_monitor': ['EVNFM_cCM_Resources.xlsx', 'cCM_Resources.xlsx', 'EVNFM_Resources.xlsx', 'differing_resource_details.xlsx', 'resource_differences.txt']
+                    ]
+                    return jobArchive.containsKey(env.JOB_NAME)
+                }
+            }
+            steps {
+                script {
+                    def jobArchive = [
+                        'ro_non_funct_resources_monitor': ['EVNFM_cCM_Resources.xlsx', 'cCM_Resources.xlsx', 'EVNFM_Resources.xlsx', 'differing_resource_details.xlsx', 'resource_differences.txt']
+                    ]
+                    jobArchive[env.JOB_NAME].each { file ->
+                        archiveArtifacts artifacts: file, allowEmptyArchive: true
+                    }
+                }
+            }
+        }
+    }
+    post {
+        always {
+            script {
+                if (env.JOB_NAME == 'ro_non_funct_resources_monitor') {
+                    def filesToRemove = [
+                        'EVNFM_cCM_Resources.xlsx', 'cCM_Resources.xlsx', 'EVNFM_Resources.xlsx', 'differing_resource_details.xlsx', 'resource_differences.txt'
+                    ]
+                    filesToRemove.each { file ->
+                        sh "rm -f ${file}"
+                    }
+                }
+            }
+        }
+    }
+}
